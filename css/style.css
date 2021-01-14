@@ -1,0 +1,85 @@
+:root{
+    --color: red;
+    --bg: #000;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+/*header*/
+.header{
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo{
+    font-size: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+
+}
+.logo img{
+    margin-right: 10px;
+}
+.logo span{
+    color: var(--color);
+    margin-right: 5px;
+}
+
+.menu{
+    height: 100%;
+}
+.menu__list{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu__el{}
+.menu__link{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu__link:hover{
+background: rgba(255, 255, 255, 0.2);
+}
+
+/*hero*/
+.hero{
+    background-image: url(../images/image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
