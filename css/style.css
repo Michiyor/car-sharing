@@ -246,6 +246,11 @@ background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
 .section-service-container{}
+.service {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .service__image{
     max-width: 100%;
     width: 170px;
@@ -263,6 +268,7 @@ background: rgba(255, 255, 255, 0.2);
     font-size: 14px;
     color: #B2B2B2;
     margin-bottom: 20px;
+    padding: 0 15px;
 }
 .service__btn{
     font-family: 'Nunito Sans', sans-serif;
@@ -275,6 +281,68 @@ background: rgba(255, 255, 255, 0.2);
     font-weight: bold;
     display: inline-flex;
     text-decoration: none;
+    justify-content: center;
 }
 /*contact*/
+.form{
+    min-width: 1130px;
+    margin: 0 auto;
+    padding-left: calc(50% + 16px);
+    background-image: url("../images/form-photo.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+
+}
+.form label:not(.form-checkbox){
+    position: absolute;
+    left: -9999px;
+}
+.form-row{
+    margin-bottom: 20px;
+}
+.form-input{
+    height: 38px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    padding: 0 15px;
+    width: 100%;
+}
+textarea.form-input{
+    height: 140px;
+    padding: 15px;
+    resize: none;
+}
+.form-input:focus{
+    outline: none;
+    border-color: var(--color);
+    box-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
+}
+.form-checkbox{}
+.form-checkbox input{
+    width: 22px;
+    height: 22px;
+
+}
+.form-checkbox input:checked{
+    background-image: url(../images/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form-btn{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-flex;color: var(--color);
+    border: 1px solid var(--color);
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(255, 0, 0, 0.3);
+    min-width: 142px;
+}
+
+
+
 
